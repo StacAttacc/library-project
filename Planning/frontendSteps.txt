@@ -1,0 +1,7 @@
+sidebar and navigation
+listing documents
+save documents
+save borrowers
+save loan
+return loan
+make it pretty

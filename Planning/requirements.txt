@@ -1,0 +1,26 @@
+backend -> 
+	everything working
+	except you don't have to deal with fines
+	f fines, I ain't pauing my taxes
+
+frontend 1st ->
+	you boot the b up
+	it shows you a page with a list of clients
+	you need to select a client
+	every operation will be for them at that point
+	if you borrow, it will be for that client
+	if you return, it wil be for that client, etc.
+	DO NOT USE THEIR FUCKING IDs
+
+frontend 2nd ->
+	1 page for creating books and cds and dvds
+	1 page to register clients
+	1 page for searches
+
+fuck, this means that the frontend needs to remember which client is using it, even if we switch components
+that's going to be a bitch to do
+on the bright side, fun:)
+
+can use react router, keep it simple
+
+WHEN WRITING TESTS, PUT //ARRANGE //ACT //ASSERT IN THE THINGY

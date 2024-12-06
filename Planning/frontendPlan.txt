@@ -1,0 +1,57 @@
+OVERALL APPEARANCE (very rudementary, but whatevs)
+[ nav ]
+>[page]
+
+Sidebar:
+>	-GENERAL1 [SELECT ACCOUNT + NEW]
+>	-GENERAL2 [AVAILABLE & UNAVAILABLE DOCUMENTS + NEW]
+>	-SPECIFIC [ACTIVE ACCOUNT INFO]
+
+
+GENERAL 1 (Home Page, Account Selection):
+[nav]	+ACTIVE ACCOUNT GEN INFO
+[page]	-Dropdown to select which client or employee
+		will the session be for
+[page]	-Adding new borrower
+
+
+GENERAL 2 (Seeing what documents can be borrowed):
+[nav]	+ACTIVE ACCOUNT GEN INFO
+[page]	-Add document button
+[page]	-List of all documents
+[page]	-List of available documents
+[page]	-Which account is curently active
+
+
+SPECIFIC:
+[nav]	+ACTIVE ACCOUNT GEN INFO
+[page]	+ACTIVE ACCOUNT SPEC INFO (name, etc.)
+[page]	+IF BORROWER
+		-List of all borrowed documents
+		-List of unreturned documents
+			Has button to return document
+[page]	+IF EMPLOYEE
+		-No lists?
+
+
+G2 Interactions (BORROWER):
+	+Add button is inactive
+	+Borrow button is active
+	-Available documents
+		Has a borrow button
+		When clicked, borrow document
+		When nbCopies is 0, put in unavailable
+	-Unavailable documents
+		When nbCopies is 0, put it in this list
+		When document is returned, nbCopies++
+			Is available again
+
+G2 Interactions (EMPLOYEE):
+	+Borrow button is inactive
+	+Add button is active
+	-Add button
+		When clicked
+		lil buttons [Book, Cd, Dvd]
+		after the type is selected, form pop up
+		When submitted, adds new document
+
